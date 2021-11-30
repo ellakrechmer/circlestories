@@ -4,6 +4,8 @@ Yusuf Elsharawy: Story Database Management, Routing<br>
 Deven Maheshwari: Frontend Design, User Database Management, QA<br>
 Naomi Naranjo: Frontend Design, Project Design<br>
 
+_Editors: Ella Krechmer and Ivan Lam_
+
 ## App Description
 CircleStories is a collaborative storytelling game. Each user can contribute an
 entry to existing stories or start their own stories. When adding to stories,
