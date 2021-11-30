@@ -16,13 +16,13 @@ nav ul {
 nav li {
   display: inline-block;
   margin-left: 10px;
-  padding-top: 23px;
+  padding-top: 10px;
   padding-bottom: 10px;
   position: relative;
 }
 
 nav a {
-  color: #444;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
