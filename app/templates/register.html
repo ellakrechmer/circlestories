@@ -13,9 +13,9 @@
     <h1>Register</h1>
     <h2>Welcome to CircleStories! Complete the following fields to register.</h2>
     <form action="/register", method="POST">
-        <p>Username: <input type="text" name="username" required></p>
-        <p>Password: <input type="password" name="password" required></p>
-        <p>Repeat Password: <input type="password" name="password_check" required></p>
+        <p>Username: <input class="form" type="text" name="username" required></p>
+        <p>Password: <input class="form" type="password" name="password" required></p>
+        <p>Repeat Password: <input class="form" type="password" name="password_check" required></p>
 
         {% if errors %}
         <ul style="color:red">
@@ -25,7 +25,7 @@
         </ul>
         {% endif %}
 
-        <input type="submit", name="sub" value="Register">
+        <input type="submit" name="sub" value="Register" class="sub">
     </form>
 
     <p>Already registered? <a href="{{ url_for('login') }}">Log in</a> here.</p>
