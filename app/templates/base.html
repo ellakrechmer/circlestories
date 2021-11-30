@@ -12,17 +12,20 @@
     <head>
         <title>{% block title %}TITLE NEEDED{% endblock %} - CircleStories</title>
         <link rel="icon" href="/static/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/base.css') }}">
     </head>
     <body>
         {% block body %}
             {% block nav %}
                 <!-- Nav -->
-                <p>
-                    <a href="{{ url_for('index') }}">Home</a>
-                    {% if "username" in session %}
-                    <a href="{{ url_for('logout') }}">Logout</a>
-                    {% endif %}
-                </p>
+                <nav>
+                    <ul>
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                        {% if "username" in session %}
+                        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                        {% endif %}
+                    </ul>
+                </nav>
             {% endblock %}
             {% block content %}
                 CONTENT NEEDED
